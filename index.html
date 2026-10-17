@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aroma y Café: café de especialidad, accesorios y experiencias para disfrutar cada taza.">
+  <title>Aroma y Café | Tienda en línea</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">☕ Envío gratis en compras mayores a $799 MXN · Hecho para disfrutar sin prisa</div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Aroma y Café, inicio">
+      <span class="brand-mark">A<span>+</span>C</span>
+      <span class="brand-name">AROMA <i>&</i> CAFÉ<small>UNA TAZA, UN MOMENTO</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav id="mainNav">
+      <a href="#catalogo">Tienda</a>
+      <a href="#nosotros">Nuestra historia</a>
+      <a href="#promociones">Promociones</a>
+      <a href="#informacion">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="accountOpen" aria-label="Área de usuario" title="Área de usuario">♙</button>
+      <button class="cart-button" id="cartOpen" aria-label="Abrir carrito">Bolsa <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">CAFÉ DE ESPECIALIDAD · MOMENTOS EXTRAORDINARIOS</p>
+        <h1>El arte de<br><em>disfrutar</em> el café.</h1>
+        <p class="hero-description">Granos seleccionados, aromas que despiertan recuerdos y pequeños rituales que hacen especial cada día.</p>
+        <div class="hero-buttons">
+          <a class="button button-dark" href="#catalogo">Explorar la tienda <span>↗</span></a>
+          <a class="text-link" href="#nosotros">Conoce nuestra historia</a>
+        </div>
+        <div class="hero-note"><span class="note-stars">★★★★★</span><span>Tu pausa favorita empieza aquí.</span></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ilustración decorativa de una taza de café">
+        <div class="sun-disc"></div>
+        <div class="hero-beans bean-one">✦</div>
+        <div class="hero-beans bean-two">✦</div>
+        <div class="cup-illustration"><div class="coffee"></div><div class="steam steam-one"></div><div class="steam steam-two"></div><div class="cup-handle"></div></div>
+        <div class="hero-label">RECIÉN<br>TU E S T O</div>
+        <div class="hero-bottom-label">ORIGEN · CALIDAD · CALMA</div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Beneficios">
+      <div><span>✦</span><p><strong>Granos seleccionados</strong><small>Calidad en cada origen</small></p></div>
+      <div><span>♧</span><p><strong>Tueste cuidadoso</strong><small>Frescura y aroma</small></p></div>
+      <div><span>⌂</span><p><strong>Entrega a domicilio</strong><small>Hasta la puerta de casa</small></p></div>
+      <div><span>♡</span><p><strong>Compra segura</strong><small>Proceso claro y sencillo</small></p></div>
+    </section>
+
+    <section class="section catalog-section" id="catalogo">
+      <div class="section-heading">
+        <div><p class="eyebrow">DESCUBRE TU FAVORITO</p><h2>La tienda <em>de café</em></h2></div>
+        <p>De la primera molienda al último sorbo, encuentra algo para tu ritual.</p>
+      </div>
+
+      <div class="shop-tools">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar café, prensa, taza..." aria-label="Buscar productos"></label>
+        <select id="categoryFilter" aria-label="Filtrar por categoría">
+          <option value="todos">Todas las categorías</option>
+          <option value="cafe">Café</option>
+          <option value="accesorios">Accesorios</option>
+          <option value="regalos">Regalos</option>
+        </select>
+        <select id="sortFilter" aria-label="Ordenar productos">
+          <option value="featured">Destacados</option>
+          <option value="low">Precio: menor a mayor</option>
+          <option value="high">Precio: mayor a menor</option>
+        </select>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state hidden" id="emptyState">No encontramos productos con esa búsqueda. Prueba con otra palabra.</p>
+    </section>
+
+    <section class="promo-banner" id="promociones">
+      <div class="promo-symbol">A<span>+</span>C</div>
+      <div><p class="eyebrow">UN DETALLE PARA TU RITUAL</p><h2>Tu primer pedido,<br><em>con un toque especial.</em></h2><p>Usa el código <strong>HOLAAROMA</strong> y recibe 10% de descuento en tu compra.</p><small>*Promoción ilustrativa para el proyecto escolar. No se procesa en una tienda real.</small></div>
+      <button class="button button-light" id="copyPromo">Copiar código ↗</button>
+    </section>
+
+    <section class="story-section" id="nosotros">
+      <div class="story-art"><div class="story-circle"></div><div class="story-cup">☕</div><span class="story-caption">UNA PAUSA<br>CON SENTIDO</span></div>
+      <div class="story-copy"><p class="eyebrow">MÁS QUE UNA BEBIDA</p><h2>Creemos en los pequeños <em>rituales.</em></h2><p>Aroma y Café nace de una idea sencilla: una buena taza puede transformar un momento cotidiano. Elegimos productos que celebran el origen, el cuidado y el placer de compartir.</p><p>Queremos acercarte café de calidad y accesorios útiles para que prepares tu taza favorita, a tu manera y a tu ritmo.</p><a class="text-link" href="#informacion">Conoce más sobre nosotros ↗</a></div>
+    </section>
+
+    <section class="steps-section">
+      <div class="section-heading centered"><div><p class="eyebrow">COMPRA EN POCOS PASOS</p><h2>De nuestra tienda <em>a tu taza.</em></h2></div></div>
+      <div class="steps-grid">
+        <div class="step"><span>01</span><div class="step-icon">⌕</div><h3>Explora</h3><p>Encuentra tu café o accesorio ideal en el catálogo.</p></div>
+        <div class="step"><span>02</span><div class="step-icon">＋</div><h3>Agrega a tu bolsa</h3><p>Elige tus productos y revisa el resumen de compra.</p></div>
+        <div class="step"><span>03</span><div class="step-icon">▤</div><h3>Confirma</h3><p>Completa tus datos y selecciona una forma de pago.</p></div>
+        <div class="step"><span>04</span><div class="step-icon">⌂</div><h3>Disfruta</h3><p>En una tienda real, recibirías la confirmación y el envío.</p></div>
+      </div>
+    </section>
+
+    <section class="info-section" id="informacion">
+      <div class="info-intro"><p class="eyebrow">INFORMACIÓN PARA COMPRAR</p><h2>Todo claro,<br><em>desde el inicio.</em></h2><p>Consulta cómo funcionaría la compra en nuestra tienda en línea.</p></div>
+      <div class="info-accordion">
+        <details open><summary>Medios de pago</summary><div class="details-content"><p><strong>Tarjeta de crédito o débito:</strong> pago rápido; requiere una pasarela segura y puede generar comisiones para el comercio.</p><p><strong>Transferencia bancaria:</strong> depósito desde la banca digital; puede tardar en reflejarse y necesita conciliación.</p><p><strong>Contra reembolso:</strong> pago al recibir el pedido; reduce la necesidad de pagar antes, pero puede generar entregas rechazadas y costos logísticos.</p><p><strong>Domiciliación bancaria:</strong> cobro autorizado a una cuenta de forma periódica; útil para suscripciones, requiere consentimiento y controles.</p><p><strong>PayPal:</strong> plataforma intermediaria que puede simplificar el pago, con posibles comisiones y disponibilidad según la cuenta y el país.</p><p><strong>SafetyPay:</strong> solución de pago que históricamente ha permitido pagar mediante banca en línea o efectivo en mercados compatibles; la disponibilidad actual debe verificarse con el proveedor antes de implementarla.</p><p class="note">Esta página es una demostración: no acepta ni procesa pagos reales.</p></div></details>
+        <details><summary>Impuestos y precios</summary><div class="details-content"><p>Los precios del catálogo están expresados en pesos mexicanos (MXN). En una operación real, el negocio debe determinar el tratamiento fiscal aplicable, mostrar con claridad el precio total al consumidor y emitir los comprobantes fiscales correspondientes cuando proceda. El IVA aplicable depende del producto y de la operación.</p></div></details>
+        <details><summary>Envíos y logística</summary><div class="details-content"><p>Como ejemplo de política logística: preparación del pedido en 1–3 días hábiles y entrega estimada de 2–5 días hábiles adicionales, sujeta al destino y a la paquetería. Se informaría el costo antes de pagar, la cobertura, el seguimiento y el procedimiento para incidencias o devoluciones. Estos plazos son ilustrativos.</p></div></details>
+        <details><summary>Registro y área de usuario</summary><div class="details-content"><p>Una tienda real permitiría crear una cuenta, iniciar sesión, guardar direcciones, consultar pedidos y actualizar datos. En esta demostración el formulario no crea una cuenta ni almacena contraseñas.</p><button class="button button-outline" id="accountOpen2">Abrir área de usuario</button></div></details>
+        <details><summary>Información corporativa y contacto</summary><div class="details-content"><p><strong>Nombre comercial:</strong> Aroma y Café.</p><p><strong>Actividad:</strong> venta en línea de café, accesorios y regalos relacionados.</p><p><strong>Valores:</strong> calidad, atención cercana, transparencia y disfrute consciente.</p><p><strong>Contacto de demostración:</strong> hola@aromaycafe.example</p><p>Para operar comercialmente se deben añadir los datos legales reales del proveedor, domicilio, medios de contacto, políticas de privacidad, términos, cambios y devoluciones.</p></div></details>
+        <details><summary>Costes de instalación de una tienda real</summary><div class="details-content"><p>Los siguientes son conceptos que se deben presupuestar; los importes dependen del proveedor y del alcance:</p><ul><li>Dominio web y renovación.</li><li>Hospedaje o plataforma de comercio electrónico.</li><li>Diseño y desarrollo de la tienda.</li><li>Certificado SSL y medidas de seguridad.</li><li>Integración de pasarela de pago y comisiones por transacción.</li><li>Fotografía, descripciones y carga del catálogo.</li><li>Mantenimiento, copias de seguridad y soporte.</li><li>Marketing digital y herramientas de analítica.</li></ul><p>El costo inicial de este prototipo es de $0 MXN en licencias si se ejecuta localmente; no incluye dominio, hospedaje ni operación comercial.</p></div></details>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">CARTAS DESDE LA CAFETERÍA</p><h2>Un poquito de café<br>en tu <em>correo.</em></h2><p>Recibe novedades, ideas para preparar café y promociones especiales.</p>
+      <form id="newsletterForm"><input type="email" placeholder="Tu correo electrónico" aria-label="Correo electrónico" required><button type="submit" class="button button-dark">Quiero recibirlas ↗</button></form><small id="newsletterMessage">Formulario de demostración: no enviaremos correos.</small>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio"><span class="brand-mark">A<span>+</span>C</span><span class="brand-name">AROMA <i>&</i> CAFÉ<small>UNA TAZA, UN MOMENTO</small></span></a>
+    <p>Un buen café hace espacio para lo importante.</p>
+    <div class="footer-links"><a href="#catalogo">Tienda</a><a href="#informacion">Pagos y envíos</a><a href="#informacion">Información legal</a></div>
+    <small>© 2026 Aroma y Café · Proyecto escolar demostrativo.</small>
+  </footer>
+
+  <div class="overlay hidden" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compra" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow">TU SELECCIÓN</p><h2>Tu bolsa <em>de café.</em></h2></div><button class="close-button" id="cartClose" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer"><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div><p>Envío e impuestos se confirmarían en el proceso de compra.</p><button class="button button-dark full-width" id="checkoutOpen">Continuar compra ↗</button><small>Demo escolar: no se realiza ningún cobro.</small></div>
+  </aside>
+
+  <div class="modal hidden" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <div class="modal-card"><button class="close-button modal-close" data-close="checkoutModal" aria-label="Cerrar">×</button><p class="eyebrow">ÚLTIMO PASO</p><h2 id="checkoutTitle">Finaliza tu <em>pedido.</em></h2><p class="modal-intro">Completa los datos de ejemplo para ver el resumen de compra. No se enviará información ni se procesará un pago real.</p>
+      <form id="checkoutForm" class="checkout-form">
+        <div class="form-row"><label>Nombre completo<input required name="name" placeholder="Tu nombre"></label><label>Correo electrónico<input required type="email" name="email" placeholder="tu@correo.com"></label></div>
+        <label>Dirección de entrega<input required name="address" placeholder="Calle, número, colonia y ciudad"></label>
+        <div class="form-row"><label>Código postal<input required name="zip" inputmode="numeric" pattern="[0-9]{5}" placeholder="00000"></label><label>Forma de pago<select required name="payment"><option value="">Selecciona una opción</option><option>Tarjeta de crédito/débito (demo)</option><option>Transferencia bancaria (demo)</option><option>Contra reembolso (demo)</option><option>PayPal (demo)</option></select></label></div>
+        <div class="checkout-total"><span>Total estimado</span><strong id="checkoutTotal">$0.00 MXN</strong></div>
+        <button class="button button-dark full-width" type="submit">Generar pedido de demostración ↗</button>
+      </form>
+      <div class="success-message hidden" id="orderSuccess"></div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="accountModal" role="dialog" aria-modal="true" aria-labelledby="accountTitle">
+    <div class="modal-card account-card"><button class="close-button modal-close" data-close="accountModal" aria-label="Cerrar">×</button><p class="eyebrow">BIENVENIDO A AROMA</p><h2 id="accountTitle">Tu espacio <em>personal.</em></h2><p class="modal-intro">Regístrate para consultar tus pedidos y guardar tus datos. Formulario ilustrativo, no almacena información.</p>
+      <form id="accountForm" class="checkout-form"><label>Nombre<input required placeholder="Tu nombre"></label><label>Correo electrónico<input type="email" required placeholder="tu@correo.com"></label><label>Contraseña<input type="password" minlength="8" required placeholder="Mínimo 8 caracteres"></label><button class="button button-dark full-width" type="submit">Crear cuenta de demostración</button></form><p class="form-feedback" id="accountFeedback"></p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
